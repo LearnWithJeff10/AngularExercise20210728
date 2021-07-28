@@ -6,4 +6,13 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {}
+export class AppComponent {
+  myNumber = 123;
+  myArray = [11, 22, 33];
+  myDate = new Date();
+  myBool = true;
+
+  myMethod() {
+    return 'This is a string coming from a method';
+  }
+}
