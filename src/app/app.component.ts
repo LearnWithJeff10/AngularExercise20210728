@@ -1,3 +1,4 @@
+import { LowerCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
@@ -8,4 +9,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'project2';
+  mynumber: number = 123;
+
+  constructor() {
+    console.log('In the constructor');
+  }
+
+  ngOnChanges() {
+    console.log('In the ngOnChanges handler');
+  }
+
+  ngOnInit() {
+    console.log(
+      'In the ngOnInit handler with title=',
+      this.title,
+      '  mynumber=',
+      this.mynumber
+    );
+  }
 }
