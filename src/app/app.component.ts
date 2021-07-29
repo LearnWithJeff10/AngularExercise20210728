@@ -6,10 +6,4 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
-  myString = '';
-
-  showMyString() {
-    console.log(this.myString);
-  }
-}
+export class AppComponent {}
