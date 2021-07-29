@@ -1,4 +1,7 @@
 <h1>My App Component</h1>
+<h2>Input control and binding</h2>
+<input (click)="myAlert()" type="button" value="Click me!!!" /><br />
+<input type="text" [value]="'Hi ' + ' y\'all'" />
 <h2>Interpolation</h2>
 {{ myMethod() | titlecase }} <br />
 {{ myNumber | currency: 'EUR' }} <br />
