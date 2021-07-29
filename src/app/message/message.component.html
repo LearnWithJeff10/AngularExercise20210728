@@ -1,0 +1,5 @@
+<div>It is currently {{ currentDate | date:'short' }} </div>
+
+<label>The prompt is: {{ prompt }}</label>
+<input type="text" [(ngModel)]="inputMessage" />
+<button (click)="onMessageChanged()">Send</button>
